@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+
+<?import javafx.scene.control.Label?>
+<VBox xmlns:fx="http://javafx.com/fxml" stylesheets="/Style.css"
+      fx:controller="Registration" >
+    <padding>
+        <Insets bottom="2.0" left="0.5" right="0.5" top="2.0"/>
+    </padding>
+            <Label text="Login"/>
+            <TextField fx:id="textFieldLogin" HBox.hgrow="ALWAYS" promptText="Login" />
+            <Label text="Password"/>
+            <PasswordField fx:id="textFieldPassword"  promptText="password" />
+            <Label text="Nickname"/>
+            <TextField fx:id="textFieldNick" HBox.hgrow="ALWAYS" promptText="Nickname" />
+
+            <TextArea fx:id="textArea" VBox.vgrow="ALWAYS" HBox.hgrow="ALWAYS" editable="false"/>
+    <HBox alignment="CENTER" VBox.vgrow="NEVER">
+        <Button text="Registration"  onAction="#regBtn"/>
+    </HBox>
+
+
+</VBox>
